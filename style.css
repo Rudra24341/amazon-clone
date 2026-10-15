@@ -1,0 +1,148 @@
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Main Navbar */
+.navbar {
+    height: 65px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding: 8px 15px;
+}
+
+/* Amazon Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #ff9900;
+}
+
+/* Delivery Location */
+.location p {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.location h4 {
+    font-size: 14px;
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    height: 40px;
+    flex: 1;
+    max-width: 650px;
+}
+
+.search select {
+    width: 55px;
+    border: none;
+    background-color: #e6e6e6;
+    padding: 5px;
+    border-radius: 4px 0 0 4px;
+}
+
+.search input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.search button {
+    width: 48px;
+    border: none;
+    background-color: #febd69;
+    font-size: 21px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Account and Orders */
+.nav-item p {
+    font-size: 12px;
+}
+
+.nav-item h4 {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Shopping Cart */
+.cart {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Second Navbar */
+.sub-navbar {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 12px 20px;
+    overflow-x: auto;
+}
+
+.sub-navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.sub-navbar a:hover {
+    border: 1px solid white;
+    padding: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 12px;
+    }
+
+    .search {
+        order: 5;
+        flex-basis: 100%;
+        max-width: none;
+    }
+
+    .location,
+    .nav-item {
+        display: none;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .sub-navbar {
+        gap: 18px;
+    }
+}

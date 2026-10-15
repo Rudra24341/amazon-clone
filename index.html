@@ -1,12 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon-clone</title>
+    <title>Amazon Navbar</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                amazon<span>⌣</span>
+            </div>
+
+            <div class="location">
+                <p>Deliver to</p>
+                <h4>📍 India</h4>
+            </div>
+
+            <div class="search">
+                <select label="Search category">
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                    <option>Books</option>
+                </select>
+
+                <input
+                    type="text"
+                    placeholder="Search Amazon.in"
+                    aria-label="Search products"
+                >
+
+                <button type="button" aria-label="Search">
+                    🔍
+                </button>
+            </div>
+
+            <div class="nav-item">
+                <p>Hello, sign in</p>
+                <h4>Account & Lists</h4>
+            </div>
+
+            <div class="nav-item">
+                <p>Returns</p>
+                <h4>& Orders</h4>
+            </div>
+
+            <div class="cart">
+                🛒 Cart
+            </div>
+
+        </div>
+
+        <nav class="sub-navbar">
+            <a href="#">☰ All</a>
+            <a href="#">Fresh</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Mobiles</a>
+            <a href="#">Fashion</a>
+            <a href="#">Electronics</a>
+            <a href="#">Home & Kitchen</a>
+            <a href="#">Customer Service</a>
+        </nav>
+    </header>
+
 </body>
 </html>
